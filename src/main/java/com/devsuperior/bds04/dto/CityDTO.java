@@ -6,6 +6,7 @@ import com.devsuperior.bds04.entities.City;
 
 import javax.validation.constraints.NotBlank;
 
+
 public class CityDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class CityService {
@@ -18,9 +19,9 @@ public class CityService {
     private CityRepository cityRepository;
 
     @Transactional(readOnly = true)
-    public Page<CityDTO> findAllPaged(Pageable pageable) {
-        Page<City> cities = cityRepository.findAll(pageable);
-        return cities.map(x -> new CityDTO(x));
+    public List<CityDTO> findAll() {
+        List<City> cities = cityRepository.findByOrderByName();
+        return cities.stream().map(x -> new CityDTO(x)).collect(Collectors.toList());
     }
 
     @Transactional
