@@ -1,4 +1,4 @@
-# DsTest
+# DsEvent
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/cristhianbiten/dsevent/blob/main/LICENSE) 
 
 # Sobre o projeto
