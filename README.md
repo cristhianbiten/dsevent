@@ -67,6 +67,29 @@ Pré-requisitos: Postman
 Collection do Postman
 https://www.getpostman.com/collections/e1f59c905aeca84c1ebc
 
+```bash
+# Busca cidades
+GET /cities
+
+# Inserção de nova cidade
+POST /cities
+{
+  "name": "Porto Alegre",
+}
+
+# Busca eventos paginados
+GET /events
+
+# Inserção de novo evento
+POST /events
+{
+  "name": "Novo Evento",
+   "url": "https://novoevento.com.br",
+   "date": "2023-07-15",
+   "cityId": 1
+}
+
+```
 
 
 # Autor
