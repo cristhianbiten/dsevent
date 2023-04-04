@@ -19,12 +19,12 @@ Neste sistema, somente as rotas de leitura (GET) de eventos e cidades são públ
 
 
 
-## Validação
+## Validações
 
-### Validações de City
+### City
 - Nome não pode ser vazio
 
-### Validações de Event
+### Event
 - Nome não pode ser vazio
 - Data não pode ser passada
 - Cidade não pode ser nula
